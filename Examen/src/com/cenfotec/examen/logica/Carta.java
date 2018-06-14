@@ -8,8 +8,10 @@ public class Carta extends Assert {
 	private int valor;
 	public static final String[] PALO = { "Escudos", "Flores", "Estrellas", "Gotas" };
 	public static final int[] LimiteValor = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-	public static final String NombreCarta[] = { "AS", "Dos", "Tres", "Cuatro", "Cinco", "Seis", "Siete", "Ocho", "Nueve", "Jota",
-			"Quina", "Ka" };
+	public static final String NombreCarta[] = { "AS", "Dos", "Tres", 
+											"Cuatro", "Cinco", "Seis",
+											"Siete", "Ocho", "Nueve", 
+											"Diez","Jota","Quina", "Ka" };
 	
 	
 	
