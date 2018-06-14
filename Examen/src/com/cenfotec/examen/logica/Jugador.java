@@ -5,22 +5,26 @@ import java.util.ArrayList;
 public class Jugador {
 
 private String nombre;
-private ArrayList<Carta> cantidadCartas;
+private ArrayList<Carta> mano;
 
 public Jugador() {
 	
-	cantidadCartas=new ArrayList<>();
+	mano=new ArrayList<>();
 	
 	
 	
 }
 	
-	public boolean crearJugador(Carta nueva,String nuevoNombre) {
+	public boolean crearJugador(String nuevoNombre) {
 		
 		
 		
 		return true;
 	}
 	
-	
+	public boolean obtenerCarta(Carta nueva) {
+		
+		mano.add(nueva);
+		return true;
+	}
 }
