@@ -18,13 +18,26 @@ public Naipe() {
 	this.siguienteCarta =0;
 }
 
-public void crearNaipe() {
+public boolean crearNaipe() {
 	
 	String []palos=Carta.PALO;
+	int [] valor=Carta.LimiteValor;
+	
+	for(int i=0;i<misCartas.length;i++) {
+	 misCartas[i] = new Carta( valor[i],Carta.NombreCarta[i % 13], palos[i/13]); 
+		
+	}
 	
 	
+	for(int j=0;j<52;j++) {
+	if(misCartas[j]==null) {
+	return true;
+	}
+	}
+return false;
+};
 }
 
 
 
-}
+
