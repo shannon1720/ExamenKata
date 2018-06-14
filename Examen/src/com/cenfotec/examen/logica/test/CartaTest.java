@@ -22,4 +22,14 @@ public void nombreCarta() throws Exception {
 		assertEquals(1,micarta.crearCarta(11,"As","Escudos"));
 	}
 
-}
+	@Test
+  public void esIgual() throws Exception {
+	  
+	Carta	micarta1=new Carta(3,"Dos","Flores");
+		Carta micarta2=new Carta(2,"Dos","Flores");
+		
+		boolean esdiferente=micarta.equals(micarta2);
+		
+	  assertEquals(false,esdiferente);
+	  
+  }}
