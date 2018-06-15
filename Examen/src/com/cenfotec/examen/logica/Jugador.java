@@ -15,6 +15,11 @@ public Jugador() {
 	
 }
 	
+	public Jugador(String string) {
+	this.nombre=string;
+	mano=new ArrayList<>();
+}
+
 	public boolean crearJugador(String nuevoNombre) {
 		
 		
