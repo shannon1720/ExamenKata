@@ -11,7 +11,36 @@ private int siguienteCarta;
 private Random numerosAleatorios;
 
 
-public static final int CantidadNaipe=52;
+public  int CantidadNaipe=52;
+
+
+
+public Carta[] getMisCartas() {
+	return misCartas;
+}
+
+
+
+
+
+public void setMisCartas(Carta[] misCartas) {
+	this.misCartas = misCartas;
+}
+
+
+
+
+
+public  int getCantidadnaipe() {
+	return CantidadNaipe;
+}
+
+
+public void setCantidadNaipe(int cantidadNaipe) {
+	CantidadNaipe = cantidadNaipe;
+}
+
+
 
 
 
@@ -26,7 +55,6 @@ public  Naipe() {
 //	String []nombre=Carta.NombreCarta;
 	int [] valor=Carta.LimiteValor;
 	misCartas = new Carta[CantidadNaipe];
-	siguienteCarta =0;
 	numerosAleatorios = new Random();
 	int j=9;
 	for(int i=0;i<misCartas.length;i++) {
@@ -55,20 +83,28 @@ misCartas[segunda] = temp;
 
 }  
 
-
-
-
-for(int j=0 ;j<misCartas.length;j++) {
-	if(misCartas[j]!=null) {
-		
-		return misCartas.length;
-	}
-
-
+return verificarMaso();
 }
 
-return 52;
-} 
+
+
+
+
+private int verificarMaso() {
+	for(int j=0 ;j<misCartas.length;j++) {
+		if(misCartas[j]!=null) {
+			
+			return misCartas.length;
+		}
+	}
+	
+	return 52;
+}
+
+
+
+
+ 
 
 
 }

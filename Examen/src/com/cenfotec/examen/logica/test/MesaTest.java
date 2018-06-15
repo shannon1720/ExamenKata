@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import com.cenfotec.examen.logica.Jugador;
 import com.cenfotec.examen.logica.Mesa;
 
 class MesaTest {
@@ -39,6 +38,11 @@ class MesaTest {
 	assertTrue(mimesa.agregarjugador(nombres));
 		
 	}
+	
+	
+	
+	
+	
 	
 	
 }
