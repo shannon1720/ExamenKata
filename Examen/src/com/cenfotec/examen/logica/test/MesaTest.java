@@ -12,6 +12,13 @@ class MesaTest {
 	
 	Mesa mimesa =new Mesa();
 	
+	
+	@Test
+	public void iniciarMesa() {
+		
+		assertEquals(0,mimesa.iniciarMesa());
+	}
+	
 	@Test
 	public void addJugadorError() {
 			
