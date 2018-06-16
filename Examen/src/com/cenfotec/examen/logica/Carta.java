@@ -26,7 +26,7 @@ public class Carta extends Assert {
 	
 	public Carta() {
 		super();
-		// TODO Auto-generated constructor stub
+	
 	}
 
 
